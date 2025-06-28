@@ -113,6 +113,8 @@
 
 <script>
 Q3D.Config.allVisible = true;
+Q3D.Config.viewpoint = {lookAt:{x:477295.80883334496,y:2074300.2834125597,z:1063.2565920920374},pos:{x:477276.397743323,y:2074200.614567634,z:1152.7262285976822}};
+Q3D.Config.localMode = true;
 Q3D.Config.northArrow.enabled = true;
 Q3D.Config.northArrow.color = 0x1e00fe;
 
@@ -123,7 +125,7 @@ var container = document.getElementById("view"),
 app.init(container);       // initialize viewer
 
 // load the scene
-app.loadSceneFile("./data/index/scene.json", function (scene) {
+app.loadSceneFile("./data/index/scene.js", function (scene) {
   // scene file has been loaded
   app.start();
 }, function (scene) {
